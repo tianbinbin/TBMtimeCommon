@@ -1,3 +1,21 @@
-PODFILE CHECKSUM: 767000e1d4af54957b94b8852d7fdf453d88670f
+PODS:
+  - Alamofire (5.2.1)
+  - TBMtimeBaseControll (0.0.1):
+    - Alamofire (= 5.2.1)
+
+DEPENDENCIES:
+  - TBMtimeBaseControll (= 0.0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+  https://github.com/tianbinbin/TBMtimePodSpec.git:
+    - TBMtimeBaseControll
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  TBMtimeBaseControll: b020cd451e9a7cfa1244e22142ec3939db7f00a3
+
+PODFILE CHECKSUM: 9006ac71a34b1cdfdabf4dfc2f76b663c92260ff
 
 COCOAPODS: 1.10.0

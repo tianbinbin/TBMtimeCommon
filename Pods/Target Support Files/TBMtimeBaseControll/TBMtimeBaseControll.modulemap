@@ -1,0 +1,6 @@
+framework module TBMtimeBaseControll {
+  umbrella header "TBMtimeBaseControll-umbrella.h"
+
+  export *
+  module * { export * }
+}

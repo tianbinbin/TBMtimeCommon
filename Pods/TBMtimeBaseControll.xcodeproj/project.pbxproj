@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BD3755CD444D83BB8901C6A85245614 /* MtimeBaseControllHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA201F0050E740B9C9294836996187DC /* MtimeBaseControllHeader.swift */; };
+		7952962639C52DB319776129D337FB8C /* MNRNetRequset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A773938484EF499800F2AB8314642 /* MNRNetRequset.swift */; };
+		9833BE49511D63895ACDBA4134AD2AC6 /* TBMtimeBaseControll.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 518BBB018E615BD14528F0BA6314A5F8 /* TBMtimeBaseControll.bundle */; };
+		A4D216787170F4B34B228DDFAC66FBC5 /* TBMtimeBaseControll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 301FAD2CFE5732006BAE71670C0DBB6B /* TBMtimeBaseControll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF069D03FEBD934C5149F013BD17269E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F216006D71B5CFA6BE43B6D0A58435 /* Alamofire.framework */; };
+		BA37C1A9D3AC0EC30C2C1C1229406292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B90D96731B94938E015A7B7E49D383A /* LaunchScreen.storyboard */; };
+		BFA92D8A0FFBAEB25977D91B99FFA664 /* TBMtimeBaseControll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE32B7137F13E995C6037EB4B7A77 /* TBMtimeBaseControll-dummy.m */; };
+		C289096AC579EB1D0CFE6616754AA0AF /* CommonEnume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD20B5944A2AC0D1C3C86431F04EBC /* CommonEnume.swift */; };
+		CC6D466EB3594E153F94685AE0A44047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E387B32216D75BDB542D953D570486A3 /* Foundation.framework */; };
+		D9AEB9C69D346F5FB951B32D35F13922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7027155CF6F9F93BFFC6AE3281B739 /* Main.storyboard */; };
+		E87C2264755B6231F495C166D48A7607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A625C44BB556897DB88A848C87252244 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F62BC93473FEC319E7AE432D200BF0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104153A4461B840417C5EA6A8672AF67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FFEE6F07759A141F5AED3F6A175D96B;
+			remoteInfo = "TBMtimeBaseControll-TBMtimeBaseControll";
+		};
+		A2A91693E81F6FA5F183228F44C345AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E59370A82124077CAFB6F94D188C67 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81B7E9B7CD0CADA087A4BB042FBA92E7;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F216006D71B5CFA6BE43B6D0A58435 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		114CA9E5C3D44BD2EC62EA0E6F225A9F /* TBMtimeBaseControll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBMtimeBaseControll.framework; path = TBMtimeBaseControll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F5DC761243B11C73C95DE583F70C07 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23B9BFE6E916A199727065081BABE265 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E9964647D414C7BBFCB48FE66233DAF /* TBMtimeBaseControll-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TBMtimeBaseControll-Info.plist"; sourceTree = "<group>"; };
+		301FAD2CFE5732006BAE71670C0DBB6B /* TBMtimeBaseControll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBMtimeBaseControll-umbrella.h"; sourceTree = "<group>"; };
+		50DD20B5944A2AC0D1C3C86431F04EBC /* CommonEnume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonEnume.swift; path = TBMtimeBaseControll/Common/CommonEnume/CommonEnume.swift; sourceTree = "<group>"; };
+		518BBB018E615BD14528F0BA6314A5F8 /* TBMtimeBaseControll.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TBMtimeBaseControll.bundle; path = "TBMtimeBaseControll-TBMtimeBaseControll.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		538C9CC067A6C1FBAE3B4273C20ACE4D /* TBMtimeBaseControll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBMtimeBaseControll-prefix.pch"; sourceTree = "<group>"; };
+		81CDE32B7137F13E995C6037EB4B7A77 /* TBMtimeBaseControll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBMtimeBaseControll-dummy.m"; sourceTree = "<group>"; };
+		9C2BC9FE2B8EEE4A335C5DE0E8548D3B /* TBMtimeBaseControll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBMtimeBaseControll.release.xcconfig; sourceTree = "<group>"; };
+		9F052F7835B5F39FC5BD48ABE65974FF /* TBMtimeBaseControll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBMtimeBaseControll.debug.xcconfig; sourceTree = "<group>"; };
+		A625C44BB556897DB88A848C87252244 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TBMtimeBaseControll/Assets.xcassets; sourceTree = "<group>"; };
+		B8E59370A82124077CAFB6F94D188C67 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
+		BEF315E89AC26B317FB5A668709F1104 /* TBMtimeBaseControll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TBMtimeBaseControll.modulemap; sourceTree = "<group>"; };
+		CA201F0050E740B9C9294836996187DC /* MtimeBaseControllHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MtimeBaseControllHeader.swift; path = TBMtimeBaseControll/Common/CommonHeaders/MtimeBaseControllHeader.swift; sourceTree = "<group>"; };
+		D19A773938484EF499800F2AB8314642 /* MNRNetRequset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MNRNetRequset.swift; path = TBMtimeBaseControll/Common/NetRquest/MNRNetRequset.swift; sourceTree = "<group>"; };
+		D75A6414F6F96B4862A8638724B29C30 /* ResourceBundle-TBMtimeBaseControll-TBMtimeBaseControll-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TBMtimeBaseControll-TBMtimeBaseControll-Info.plist"; sourceTree = "<group>"; };
+		E387B32216D75BDB542D953D570486A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAA0AA39929AC7455D8E49DC02AB8A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF069D03FEBD934C5149F013BD17269E /* Alamofire.framework in Frameworks */,
+				CC6D466EB3594E153F94685AE0A44047 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91991CA2D802A3D398B2722BF14C591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B846041F629D0B0D3304531E118CAB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05F216006D71B5CFA6BE43B6D0A58435 /* Alamofire.framework */,
+				A708AA8DB3942D5B490637F3F0410B81 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BAA08E82B7241576B9CB7529ADF87D5 = {
+			isa = PBXGroup;
+			children = (
+				FCD579837B65CF3A66239A6FBE8ADDE9 /* Dependencies */,
+				0B846041F629D0B0D3304531E118CAB4 /* Frameworks */,
+				8BF110F96D30E3EEA09263C3D4311C72 /* Products */,
+				899EEEDE57A4D3837F15750B7AA9B0FA /* TBMtimeBaseControll */,
+			);
+			sourceTree = "<group>";
+		};
+		204EB70453ECA1181477384CF7D6578D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A625C44BB556897DB88A848C87252244 /* Assets.xcassets */,
+				4B90D96731B94938E015A7B7E49D383A /* LaunchScreen.storyboard */,
+				6F7027155CF6F9F93BFFC6AE3281B739 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		899EEEDE57A4D3837F15750B7AA9B0FA /* TBMtimeBaseControll */ = {
+			isa = PBXGroup;
+			children = (
+				50DD20B5944A2AC0D1C3C86431F04EBC /* CommonEnume.swift */,
+				D19A773938484EF499800F2AB8314642 /* MNRNetRequset.swift */,
+				CA201F0050E740B9C9294836996187DC /* MtimeBaseControllHeader.swift */,
+				204EB70453ECA1181477384CF7D6578D /* Resources */,
+				DA7745B179EF4E279715A3BD2E605551 /* Support Files */,
+			);
+			name = TBMtimeBaseControll;
+			path = TBMtimeBaseControll;
+			sourceTree = "<group>";
+		};
+		8BF110F96D30E3EEA09263C3D4311C72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518BBB018E615BD14528F0BA6314A5F8 /* TBMtimeBaseControll.bundle */,
+				114CA9E5C3D44BD2EC62EA0E6F225A9F /* TBMtimeBaseControll.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A708AA8DB3942D5B490637F3F0410B81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E387B32216D75BDB542D953D570486A3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA7745B179EF4E279715A3BD2E605551 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D75A6414F6F96B4862A8638724B29C30 /* ResourceBundle-TBMtimeBaseControll-TBMtimeBaseControll-Info.plist */,
+				BEF315E89AC26B317FB5A668709F1104 /* TBMtimeBaseControll.modulemap */,
+				81CDE32B7137F13E995C6037EB4B7A77 /* TBMtimeBaseControll-dummy.m */,
+				2E9964647D414C7BBFCB48FE66233DAF /* TBMtimeBaseControll-Info.plist */,
+				538C9CC067A6C1FBAE3B4273C20ACE4D /* TBMtimeBaseControll-prefix.pch */,
+				301FAD2CFE5732006BAE71670C0DBB6B /* TBMtimeBaseControll-umbrella.h */,
+				9F052F7835B5F39FC5BD48ABE65974FF /* TBMtimeBaseControll.debug.xcconfig */,
+				9C2BC9FE2B8EEE4A335C5DE0E8548D3B /* TBMtimeBaseControll.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TBMtimeBaseControll";
+			sourceTree = "<group>";
+		};
+		FCD579837B65CF3A66239A6FBE8ADDE9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B8E59370A82124077CAFB6F94D188C67 /* Alamofire */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C334D56DD00FADE407522AF53778EE82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D216787170F4B34B228DDFAC66FBC5 /* TBMtimeBaseControll-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C5FE2659DC6F35C333F664DBDE70AF7 /* TBMtimeBaseControll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D7802E79A33D45B696F02ED5B78BCC /* Build configuration list for PBXNativeTarget "TBMtimeBaseControll" */;
+			buildPhases = (
+				C334D56DD00FADE407522AF53778EE82 /* Headers */,
+				F2710C3671CA35926098379B58026118 /* Sources */,
+				AAA0AA39929AC7455D8E49DC02AB8A80 /* Frameworks */,
+				134CA0B374E7FC13CB7C695F3768FD8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43AEAB7223F15CB000D8E801DF6F71AB /* PBXTargetDependency */,
+				5C961948A0C291AD6C3DF0278F6997CA /* PBXTargetDependency */,
+			);
+			name = TBMtimeBaseControll;
+			productName = TBMtimeBaseControll;
+			productReference = 114CA9E5C3D44BD2EC62EA0E6F225A9F /* TBMtimeBaseControll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FFEE6F07759A141F5AED3F6A175D96B /* TBMtimeBaseControll-TBMtimeBaseControll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF6264B1B2DF8ACB81956B89341F55C /* Build configuration list for PBXNativeTarget "TBMtimeBaseControll-TBMtimeBaseControll" */;
+			buildPhases = (
+				9B9036AB36DE4B7584D4087E6B06E165 /* Sources */,
+				D91991CA2D802A3D398B2722BF14C591 /* Frameworks */,
+				F9F352367CF8D07EBAC0F0773334E247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TBMtimeBaseControll-TBMtimeBaseControll";
+			productName = "TBMtimeBaseControll-TBMtimeBaseControll";
+			productReference = 518BBB018E615BD14528F0BA6314A5F8 /* TBMtimeBaseControll.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104153A4461B840417C5EA6A8672AF67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = A6CB3BD8BEE3008D63340B32692E0F5C /* Build configuration list for PBXProject "TBMtimeBaseControll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BAA08E82B7241576B9CB7529ADF87D5;
+			productRefGroup = 8BF110F96D30E3EEA09263C3D4311C72 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProjectRef = B8E59370A82124077CAFB6F94D188C67 /* Alamofire */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0C5FE2659DC6F35C333F664DBDE70AF7 /* TBMtimeBaseControll */,
+				6FFEE6F07759A141F5AED3F6A175D96B /* TBMtimeBaseControll-TBMtimeBaseControll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134CA0B374E7FC13CB7C695F3768FD8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9833BE49511D63895ACDBA4134AD2AC6 /* TBMtimeBaseControll.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F352367CF8D07EBAC0F0773334E247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87C2264755B6231F495C166D48A7607 /* Assets.xcassets in Resources */,
+				BA37C1A9D3AC0EC30C2C1C1229406292 /* LaunchScreen.storyboard in Resources */,
+				D9AEB9C69D346F5FB951B32D35F13922 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B9036AB36DE4B7584D4087E6B06E165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2710C3671CA35926098379B58026118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C289096AC579EB1D0CFE6616754AA0AF /* CommonEnume.swift in Sources */,
+				7952962639C52DB319776129D337FB8C /* MNRNetRequset.swift in Sources */,
+				3BD3755CD444D83BB8901C6A85245614 /* MtimeBaseControllHeader.swift in Sources */,
+				BFA92D8A0FFBAEB25977D91B99FFA664 /* TBMtimeBaseControll-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43AEAB7223F15CB000D8E801DF6F71AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = A2A91693E81F6FA5F183228F44C345AD /* PBXContainerItemProxy */;
+		};
+		5C961948A0C291AD6C3DF0278F6997CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TBMtimeBaseControll-TBMtimeBaseControll";
+			target = 6FFEE6F07759A141F5AED3F6A175D96B /* TBMtimeBaseControll-TBMtimeBaseControll */;
+			targetProxy = 0F62BC93473FEC319E7AE432D200BF0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B90D96731B94938E015A7B7E49D383A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20F5DC761243B11C73C95DE583F70C07 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen.storyboard;
+			path = TBMtimeBaseControll;
+			sourceTree = "<group>";
+		};
+		6F7027155CF6F9F93BFFC6AE3281B739 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B9BFE6E916A199727065081BABE265 /* Main.storyboard */,
+			);
+			name = Main.storyboard;
+			path = TBMtimeBaseControll;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2439BBF5ABB7E2B64FF6353BA2772F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2BC9FE2B8EEE4A335C5DE0E8548D3B /* TBMtimeBaseControll.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TBMtimeBaseControll";
+				IBSC_MODULE = TBMtimeBaseControll;
+				INFOPLIST_FILE = "Target Support Files/TBMtimeBaseControll/ResourceBundle-TBMtimeBaseControll-TBMtimeBaseControll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = TBMtimeBaseControll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		612ED059B915FAC7DFAF437ADFE3E5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8289B453CE6F0721A5369D5EED0D94F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F052F7835B5F39FC5BD48ABE65974FF /* TBMtimeBaseControll.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll.modulemap";
+				PRODUCT_MODULE_NAME = TBMtimeBaseControll;
+				PRODUCT_NAME = TBMtimeBaseControll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88E23B076ED19CB6F9D508B332A00E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F052F7835B5F39FC5BD48ABE65974FF /* TBMtimeBaseControll.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TBMtimeBaseControll";
+				IBSC_MODULE = TBMtimeBaseControll;
+				INFOPLIST_FILE = "Target Support Files/TBMtimeBaseControll/ResourceBundle-TBMtimeBaseControll-TBMtimeBaseControll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = TBMtimeBaseControll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A35C63A3C4F2F9248F9D22B7AAAD327E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2BC9FE2B8EEE4A335C5DE0E8548D3B /* TBMtimeBaseControll.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TBMtimeBaseControll/TBMtimeBaseControll.modulemap";
+				PRODUCT_MODULE_NAME = TBMtimeBaseControll;
+				PRODUCT_NAME = TBMtimeBaseControll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3787E859F3BDCE56FE96BB0F9CA5353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D7802E79A33D45B696F02ED5B78BCC /* Build configuration list for PBXNativeTarget "TBMtimeBaseControll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8289B453CE6F0721A5369D5EED0D94F1 /* Debug */,
+				A35C63A3C4F2F9248F9D22B7AAAD327E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CB3BD8BEE3008D63340B32692E0F5C /* Build configuration list for PBXProject "TBMtimeBaseControll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3787E859F3BDCE56FE96BB0F9CA5353 /* Debug */,
+				612ED059B915FAC7DFAF437ADFE3E5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF6264B1B2DF8ACB81956B89341F55C /* Build configuration list for PBXNativeTarget "TBMtimeBaseControll-TBMtimeBaseControll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E23B076ED19CB6F9D508B332A00E22 /* Debug */,
+				2439BBF5ABB7E2B64FF6353BA2772F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104153A4461B840417C5EA6A8672AF67 /* Project object */;
+}
