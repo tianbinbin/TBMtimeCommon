@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/tianbinbin/TBMtimeCommon"
 
   # 资源地址
-  spec.source       = { :git => "git@github.com:tianbinbin/TBMtimeCommon.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/tianbinbin/TBMtimeCommon.git", :tag => "#{spec.version}" }
 
   # 这个项目对外暴露的文件 .h .m 等 这个地方 有对应的信息啊 这个地方会有一些疑惑 所有路径下的所有文件
   spec.source_files  = "TBMtimeCommon/**/*.swift"
