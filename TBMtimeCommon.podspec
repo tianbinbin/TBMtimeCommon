@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "TBMtimeCommon/**/*.swift"
 
   # 排除对外引用的文件
-  spec.exclude_files = "TBMtimeCommon/AppDelegate.swift","MtimeBaseControll/ViewController.swift"
+  spec.exclude_files = "TBMtimeCommon/AppDelegate.swift","TBMtimeCommon/ViewController.swift"
 
   # 头文件 目前发现这个没啥卵用 先废弃
   # spec.public_header_files = "Classes/**/*.h"

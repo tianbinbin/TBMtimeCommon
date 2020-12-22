@@ -13,6 +13,7 @@
 		08544FAB25919D2800E22902 /* TBMtimeCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08544FA925919D2800E22902 /* TBMtimeCommon.xcdatamodeld */; };
 		08544FAD25919D2A00E22902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08544FAC25919D2A00E22902 /* Assets.xcassets */; };
 		08544FB025919D2A00E22902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08544FAE25919D2A00E22902 /* LaunchScreen.storyboard */; };
+		085450BD2591A2C100E22902 /* MNFWKWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085450BC2591A2C100E22902 /* MNFWKWebVC.swift */; };
 		3E22569227DA8B4E4FD47363 /* Pods_TBMtimeCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77BBA1E8820BB98CF73E0CD /* Pods_TBMtimeCommon.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		08544FB125919D2A00E22902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08544FB625919D2B00E22902 /* TBMtimeCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBMtimeCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08544FC125919D2B00E22902 /* TBMtimeCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBMtimeCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		085450BC2591A2C100E22902 /* MNFWKWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFWKWebVC.swift; sourceTree = "<group>"; };
 		6BC16D42FE7B3E4733CD924A /* Pods-TBMtimeCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeCommon.release.xcconfig"; path = "Target Support Files/Pods-TBMtimeCommon/Pods-TBMtimeCommon.release.xcconfig"; sourceTree = "<group>"; };
 		A77BBA1E8820BB98CF73E0CD /* Pods_TBMtimeCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBMtimeCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D1A9925D117566EBD5CE1B /* Pods-TBMtimeCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeCommon.debug.xcconfig"; path = "Target Support Files/Pods-TBMtimeCommon/Pods-TBMtimeCommon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		08544F9F25919D2800E22902 /* TBMtimeCommon */ = {
 			isa = PBXGroup;
 			children = (
+				085450B22591A28D00E22902 /* Common */,
 				08544FA025919D2800E22902 /* AppDelegate.swift */,
 				08544FA425919D2800E22902 /* ViewController.swift */,
 				08544FA625919D2800E22902 /* Main.storyboard */,
@@ -115,6 +118,22 @@
 				08544FA925919D2800E22902 /* TBMtimeCommon.xcdatamodeld */,
 			);
 			path = TBMtimeCommon;
+			sourceTree = "<group>";
+		};
+		085450B22591A28D00E22902 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				085450B32591A29600E22902 /* CommonVCs */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		085450B32591A29600E22902 /* CommonVCs */ = {
+			isa = PBXGroup;
+			children = (
+				085450BC2591A2C100E22902 /* MNFWKWebVC.swift */,
+			);
+			path = CommonVCs;
 			sourceTree = "<group>";
 		};
 		C774F95166070289336D7436 /* Pods */ = {
@@ -283,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08544FA525919D2800E22902 /* ViewController.swift in Sources */,
+				085450BD2591A2C100E22902 /* MNFWKWebVC.swift in Sources */,
 				08544FAB25919D2800E22902 /* TBMtimeCommon.xcdatamodeld in Sources */,
 				08544FA125919D2800E22902 /* AppDelegate.swift in Sources */,
 			);
