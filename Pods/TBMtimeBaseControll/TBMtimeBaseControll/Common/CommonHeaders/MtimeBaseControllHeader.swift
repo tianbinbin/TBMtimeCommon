@@ -17,6 +17,10 @@ import Foundation
 
 
 // MARK: 三方库头文件
-//import Rswift
+import Alamofire
+import Rswift
+import RxCocoa
+import RxGesture
+import RxDataSources
+import SnapKit
 
-// MARK: 自定义控件头文件
