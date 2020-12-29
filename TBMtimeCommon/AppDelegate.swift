@@ -8,6 +8,8 @@
 import UIKit
 import CoreData
 
+import TBMtimeBaseControll
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,14 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = .white
-        let vc = ViewController()
-        let rootVC = UINavigationController(rootViewController: vc)
-        rootVC.title = "公共组件"
-        self.window?.rootViewController = rootVC
-        self.window?.makeKeyAndVisible()
-        
+        /// 设置tabbbar
+        conggfigTabbar()
+
         return true
     }
     
@@ -51,5 +48,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate {
+    
+    /// 设置bundle
+    func congfigBundle() {
+        
+    }
+    
+    /// 设置tabbbar
+    func conggfigTabbar() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = .white
+        let vc = ViewController()
+        let rootVC = UINavigationController(rootViewController: vc)
+        rootVC.title = "公共组件"
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
+        
+    }
 }
 
