@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		08412392259B225A00F09646 /* BundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08412391259B225A00F09646 /* BundleExtention.swift */; };
+		084124B7259B2D6500F09646 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084124B6259B2D6500F09646 /* R.generated.swift */; };
 		08544FA125919D2800E22902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08544FA025919D2800E22902 /* AppDelegate.swift */; };
 		08544FA525919D2800E22902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08544FA425919D2800E22902 /* ViewController.swift */; };
-		08544FA825919D2800E22902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08544FA625919D2800E22902 /* Main.storyboard */; };
 		08544FAB25919D2800E22902 /* TBMtimeCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08544FA925919D2800E22902 /* TBMtimeCommon.xcdatamodeld */; };
 		08544FAD25919D2A00E22902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08544FAC25919D2A00E22902 /* Assets.xcassets */; };
 		08544FB025919D2A00E22902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08544FAE25919D2A00E22902 /* LaunchScreen.storyboard */; };
@@ -37,10 +37,10 @@
 
 /* Begin PBXFileReference section */
 		08412391259B225A00F09646 /* BundleExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtention.swift; sourceTree = "<group>"; };
+		084124B6259B2D6500F09646 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		08544F9D25919D2800E22902 /* TBMtimeCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBMtimeCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08544FA025919D2800E22902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08544FA425919D2800E22902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		08544FA725919D2800E22902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08544FAA25919D2800E22902 /* TBMtimeCommon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TBMtimeCommon.xcdatamodel; sourceTree = "<group>"; };
 		08544FAC25919D2A00E22902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08544FAF25919D2A00E22902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				085450B22591A28D00E22902 /* Common */,
 				08544FA025919D2800E22902 /* AppDelegate.swift */,
 				08544FA425919D2800E22902 /* ViewController.swift */,
-				08544FA625919D2800E22902 /* Main.storyboard */,
+				084124B6259B2D6500F09646 /* R.generated.swift */,
 				08544FAC25919D2A00E22902 /* Assets.xcassets */,
 				08544FAE25919D2A00E22902 /* LaunchScreen.storyboard */,
 				08544FB125919D2A00E22902 /* Info.plist */,
@@ -164,6 +164,7 @@
 			buildConfigurationList = 08544FCA25919D2B00E22902 /* Build configuration list for PBXNativeTarget "TBMtimeCommon" */;
 			buildPhases = (
 				9E34CFFC4E4EC0E1A35835FF /* [CP] Check Pods Manifest.lock */,
+				0841248F259B2CE900F09646 /* R.swift */,
 				08544F9925919D2800E22902 /* Sources */,
 				08544F9A25919D2800E22902 /* Frameworks */,
 				08544F9B25919D2800E22902 /* Resources */,
@@ -263,7 +264,6 @@
 			files = (
 				08544FB025919D2A00E22902 /* LaunchScreen.storyboard in Resources */,
 				08544FAD25919D2A00E22902 /* Assets.xcassets in Resources */,
-				08544FA825919D2800E22902 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +284,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0841248F259B2CE900F09646 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/TBMtimeCommon/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TBMtimeCommon/R.generated.swift\"\nsed -i '' -e \"s/Bundle(for: R.Class.self)/Bundle.common/g\" \"$SRCROOT/TBMtimeCommon/R.generated.swift\"\n";
+		};
 		9E34CFFC4E4EC0E1A35835FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +355,7 @@
 				085450BD2591A2C100E22902 /* MNFWKWebVC.swift in Sources */,
 				08544FAB25919D2800E22902 /* TBMtimeCommon.xcdatamodeld in Sources */,
 				08544FA125919D2800E22902 /* AppDelegate.swift in Sources */,
+				084124B7259B2D6500F09646 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		08544FA625919D2800E22902 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08544FA725919D2800E22902 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08544FAE25919D2A00E22902 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

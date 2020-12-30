@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/tianbinbin/TBMtimeCommon.git", :tag => "#{spec.version}" }
 
   # 这个项目对外暴露的文件 .h .m 等 这个地方 有对应的信息啊 这个地方会有一些疑惑 所有路径下的所有文件
-  spec.source_files  = "TBMtimeCommon/**/*.swift"
+  spec.source_files  = "TBMtimeCommon/**/*.swift","TBMtimeCommon/R.generated.swift"
 
   # 排除对外引用的文件
   spec.exclude_files = "TBMtimeCommon/AppDelegate.swift","TBMtimeCommon/ViewController.swift"
@@ -53,8 +53,7 @@ Pod::Spec.new do |spec|
   
 
   # 当前项目所依赖的第三方库 都需要对外暴露
-  #spec.dependency "Alamofire", "5.2.1"
-  #spec.dependency "Kingfisher", "5.14.0"
+   spec.dependency "TBMtimeBaseControll", "0.0.1"
 
 end
 

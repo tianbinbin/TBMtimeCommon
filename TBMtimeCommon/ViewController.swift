@@ -15,3 +15,10 @@ class ViewController: UIViewController {
     }
 }
 
+
+extension ViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        navigationController?.pushViewController(MNFWKWebVC(), animated: true)
+    }
+}
+
