@@ -15,6 +15,7 @@ target 'TBMtimeCommon' do
    
    pod 'TBMtimeBaseControll', '0.0.1'
 
-
+   # 代码校验工具
+   pod 'SwiftLint', '0.42.0', :configurations => ['Debug']
 
 end

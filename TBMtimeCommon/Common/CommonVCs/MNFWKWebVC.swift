@@ -12,7 +12,7 @@ import TBMtimeBaseControll
 
 class MNFWKWebVC: MNFBaseViewController {
     
-    lazy var imageView:UIImageView = {
+    lazy var imageView: UIImageView = {
         
         /// 组件话开发离不开bundle
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 300))
@@ -20,7 +20,6 @@ class MNFWKWebVC: MNFBaseViewController {
         imageView.backgroundColor = .orange
         return imageView
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

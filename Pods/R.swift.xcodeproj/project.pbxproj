@@ -93,16 +93,16 @@
 		B90D616832CAB42E650F12B59C2EA780 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 8A41CD8E4C679AC7247793EA23D1CDD6 /* Build configuration list for PBXProject "R.swift" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = F2E3357DA00E89877D9F37B70946C357;
 			productRefGroup = CE8978BB2824B28944F03B530D10726E /* Products */;

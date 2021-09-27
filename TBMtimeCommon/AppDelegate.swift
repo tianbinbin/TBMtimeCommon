@@ -61,12 +61,11 @@ extension AppDelegate {
     func conggfigTabbar() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = .white
-        let vc = ViewController()
-        let rootVC = UINavigationController(rootViewController: vc)
+        let vcdata = ViewController()
+        let rootVC = UINavigationController(rootViewController: vcdata)
         rootVC.title = "公共组件"
         self.window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
         
     }
 }
-
