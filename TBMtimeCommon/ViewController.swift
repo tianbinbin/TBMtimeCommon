@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var data = [1, 2, 3]
+    var datas = [2.3, 3, 3]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+
+        if datas.count > 0 {
+            print("你是谁")
+        }
     }
 }
 
